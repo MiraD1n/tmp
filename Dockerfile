@@ -13,7 +13,7 @@ RUN apt-get update \
 && cd ./nginx-1.7.9 \
 && ./configure --with-cc-opt="-Wno-error" \
 && make \
-&& make install \ 
+&& make install \
 && wget https://raw.githubusercontent.com/JasonGiedymin/nginx-init-ubuntu/master/nginx -O /etc/init.d/nginx \
 && chmod +x /etc/init.d/nginx \
 && service nginx start
