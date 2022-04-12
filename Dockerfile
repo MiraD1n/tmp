@@ -2,7 +2,7 @@
 
 # Используем за основу контейнера Ubuntu 14.04 LTS
 FROM ubuntu:latest
-# Переключаем Ubuntu в неинтерактивный режим — чтобы избежать лишних запросов
+# Переключаем Ubuntu в неинтерактивный режим — чтобы избежать лишних запросов.
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update \
 && apt-get install -y cpp wget libpcre3-dev libc6-dev zlib1g-dev gcc make \
