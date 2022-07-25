@@ -16,6 +16,7 @@ RUN apt-get update \
 && make install \
 && wget https://raw.githubusercontent.com/JasonGiedymin/nginx-init-ubuntu/master/nginx -O /etc/init.d/nginx \
 && chmod +x /etc/init.d/nginx \
+# Just for test commiting via phycharm
 && service nginx start
 VOLUME ["/var/www"]
 EXPOSE 80
